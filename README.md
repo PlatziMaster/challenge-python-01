@@ -9,6 +9,7 @@ En el archivo **main.py** completa la función `generate_password`. La misma deb
 Aclaraciones:
 
 - **No modifiques la función `validate`**
+- No uses letras con tildes, ni la ñ
 - No necesitas instalar nada ni crear un entorno virtual, ya que todos los módulos que puedes usar vienen en el core de Python
 - Utiliza Python 3 para resolver el reto
 - ¡No leas las soluciones de tus compañeros! Es importante que te retes a ti mismo y pruebes tus habilidades
