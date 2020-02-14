@@ -1,10 +1,10 @@
-# challenge-python-02 - Generate a password
+# challenge-python-01 - Palíndromo
 
-Genera una contraseña segura
+Un palíndromo es una palabra o frase que puede leerse igual al derecho y al revez, como "oso", "ana", "amad a la dama", etc.
 
 ### RETO
 
-En el archivo **main.py** completa la función `generate_password`. La misma debe retornar una contraseña segura y contener letras minúsculas y mayúsculas, números y símbolos. Debe tener entre 8 y 16 caracteres. Por último corre el script, y si obtienes el output "Secure Password" completaste el reto!
+Completa la función **is_palindrome()** y corre tu script. Tu función debe retornar True en caso de recibir un palíndromo como argumento, o False si se trata de lo contrario. Si recibes el output "Completaste el test" estás listo para hacer un pull request!
 
 Aclaraciones:
 
