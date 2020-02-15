@@ -15,6 +15,17 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
+    reverse_text=[]
+    for letter in palindrome:
+        reverse_text.insert(0,letter)
+    new_reverse_text = ''.join(reverse_text)
+    new_reverse_text = new_reverse_text.lower().replace(' ','')    
+    
+    if new_reverse_text == palindrome.lower().replace(' ',''):
+        return True
+    else:
+        return False
+
 
 
 def validate():
