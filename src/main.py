@@ -15,6 +15,9 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
+    word = palindrome.replace(' ', '').lower();
+    reverse_word = ''.join(reversed(word));
+    return reverse_word == word
     pass
 
 def validate():
