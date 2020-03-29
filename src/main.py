@@ -14,8 +14,13 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    fixed_string = palindrome.replace(" ", "").upper()
+    N = len(fixed_string)
+    for i in range((N+1)//2):
+        if not fixed_string[i] == fixed_string[N-1-i]:
+            return False
+    return True
+
 
 def validate():
     for palindrome in PALINDROMES:
