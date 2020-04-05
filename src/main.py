@@ -4,6 +4,7 @@ PALINDROMES = [
     'Acaso hubo buhos aca',
     'A la catalana banal atacala',
     'Amar da drama',
+    'Anita lava la tina'
 ]
 
 NOT_PALINDROMES = [
