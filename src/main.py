@@ -16,11 +16,10 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    text_filter = palindrome.replace(' ','').lower()[::-1]
-    original_text_compare = palindrome.replace(' ','').lower()
+    palindrome = palindrome.replace(' ','').lower()
     # Test function
     # print(f"{original_text_compare}-{text_filter} | {text_filter == original_text_compare}")
-    return text_filter == original_text_compare
+    return palindrome == palindrome[::-1]
 
 
 def validate():
