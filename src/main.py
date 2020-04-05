@@ -4,6 +4,7 @@ PALINDROMES = [
     'Acaso hubo buhos aca',
     'A la catalana banal atacala',
     'Amar da drama',
+    'Anita lava la tina'
 ]
 
 NOT_PALINDROMES = [
@@ -15,7 +16,9 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    palindrome = palindrome.replace(' ','').lower()
+    return palindrome == palindrome[::-1]
+
 
 def validate():
     for palindrome in PALINDROMES:
