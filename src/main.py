@@ -17,8 +17,6 @@ NOT_PALINDROMES = [
 def is_palindrome(palindrome):
     # Start coding here
     palindrome = palindrome.replace(' ','').lower()
-    # Test function
-    # print(f"{original_text_compare}-{text_filter} | {text_filter == original_text_compare}")
     return palindrome == palindrome[::-1]
 
 
