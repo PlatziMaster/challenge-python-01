@@ -14,14 +14,10 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    palindrome = palindrome.replace(" ", "")
-    palindrome = palindrome.lower()
-
+    palindrome = palindrome.replace(" ", "").lower()
     new_string = palindrome[:: -1]
 
-    if palindrome == new_string:
-        return True
-    return False
+    return palindrome == new_string
 
 
 def validate():
