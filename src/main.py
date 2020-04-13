@@ -1,4 +1,5 @@
 # Resolve the problem!!
+import re
 
 PALINDROMES = [
     'Acaso hubo buhos aca',
@@ -14,8 +15,9 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    prossed_word = re.sub(r"\s+", "", palindrome.lower())
+    
+    return prossed_word == prossed_word[::-1]
 
 def validate():
     for palindrome in PALINDROMES:
