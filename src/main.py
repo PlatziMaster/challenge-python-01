@@ -12,10 +12,23 @@ NOT_PALINDROMES = [
     'Oscar',
 ]
 
-
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    without_blanks = []
+    cut_word = []
+
+    for letter in palindrome:
+        if letter != ' ':
+            cut_word.insert(0, letter)
+        without_blanks = without_blanks + cut_word
+        cut_word = []
+    full_sentence = ''.join(without_blanks)
+    full_sentence = full_sentence.lower()
+    reversed_word = full_sentence[::-1]
+    print(full_sentence)
+    print(reversed_word)
+    if reversed_word == full_sentence:
+        return True
+    return False
 
 def validate():
     for palindrome in PALINDROMES:
