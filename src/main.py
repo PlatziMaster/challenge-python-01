@@ -12,10 +12,13 @@ NOT_PALINDROMES = [
     'Oscar',
 ]
 
-
-def is_palindrome(palindrome):
-    # Start coding here
-    pass
+def is_palindrome(palindrome):	
+    str_palindrome = palindrome.replace(" ", "").upper()
+    str_palindrome_inverse = str_palindrome[::-1]
+    if str_palindrome == str_palindrome_inverse:
+        return True
+    else:
+        return False
 
 def validate():
     for palindrome in PALINDROMES:
