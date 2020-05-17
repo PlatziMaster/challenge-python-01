@@ -14,8 +14,18 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    text = palindrome.lower()
+    pali = []
+    for letter in text:
+        if letter != ' ':
+            pali.append(letter)
+    pali = ''.join(pali)
+    reversed_pali = pali[::-1]
+    if pali == reversed_pali:
+        return True
+    else:
+        return False
+
 
 def validate():
     for palindrome in PALINDROMES:
