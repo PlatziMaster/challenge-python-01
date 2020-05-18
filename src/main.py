@@ -8,7 +8,7 @@ PALINDROMES = [
 
 NOT_PALINDROMES = [
     'Hola como estas',
-    'Platzi'
+    'Platzi',
     'Oscar',
 ]
 
