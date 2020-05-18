@@ -15,7 +15,9 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    palindrome = palindrome.lower().replace(" ", "") # lowercase and remove spaces
+    return palindrome == palindrome[::-1] # Compare normal with inverse word
+
 
 def validate():
     for palindrome in PALINDROMES:
