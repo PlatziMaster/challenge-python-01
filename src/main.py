@@ -23,9 +23,6 @@ def is_palindrome(palindrome):
     elif BackwardsPalindrome != newPal: ## If 'BackwardsPalindrome' isn't the same as 'newPal', 'newPal' isn't a palindrome, then return false to continue the second loop 'for' on the function validate().
         print('     The string \'{}\' isn\'t a palindrome'.format(palindrome))
         return False
-    else:
-        print('     ¡Ups, there\'s an error!') ## If there's any error that may occur, this option come up
-        return False
 
 def validate():
     for palindrome in PALINDROMES:
