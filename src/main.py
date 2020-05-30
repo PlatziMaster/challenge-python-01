@@ -1,5 +1,5 @@
 # Resolve the problem!!
-#Test
+
 PALINDROMES = [
     'Acaso hubo buhos aca',
     'A la catalana banal atacala',
@@ -14,8 +14,13 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    palindrome = palindrome.replace(" ","")
+    palindrome = palindrome.lower()
+    if palindrome == palindrome[::-1]:
+        return True
+    else:
+        return False
+    
 
 def validate():
     for palindrome in PALINDROMES:
