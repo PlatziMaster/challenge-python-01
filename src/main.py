@@ -8,14 +8,25 @@ PALINDROMES = [
 
 NOT_PALINDROMES = [
     'Hola como estas',
-    'Platzi'
+    'Platzi',
     'Oscar',
 ]
 
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    
+    palindrome = palindrome.lower()
+    palindrome = palindrome.split(" ")
+    palindrome = "".join(palindrome)
+
+    checker = palindrome[::-1]
+
+    if palindrome == checker:
+        return True
+    else:
+        return False
+
 
 def validate():
     for palindrome in PALINDROMES:
