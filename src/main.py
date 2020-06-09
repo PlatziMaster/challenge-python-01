@@ -15,7 +15,24 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+
+    # USING PYTHON METHODS
+    # palin = palindrome.replace(' ', '').lower()
+    # return palin == palin[::-1]
+
+    # WITHOUT PYTHON METHODS
+    palin = ''
+    for char in palindrome:
+        if char != ' ':
+            palin += char
+    
+    cont = len(palin)-1
+    reverse = ''
+    while(cont >= 0):
+        reverse += palin[cont]
+        cont -= 1
+
+    return palin.lower() == reverse.lower()
 
 def validate():
     for palindrome in PALINDROMES:
