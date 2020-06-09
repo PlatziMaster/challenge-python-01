@@ -15,7 +15,17 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    word_treatment = palindrome.casefold().replace(' ','')
+    forwards = list(word_treatment) 
+    backwards = list(reversed(forwards))
+
+    if forwards == backwards:
+        answer = True
+
+    else:
+        answer = False 
+
+    return answer
 
 def validate():
     for palindrome in PALINDROMES:
