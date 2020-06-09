@@ -8,14 +8,17 @@ PALINDROMES = [
 
 NOT_PALINDROMES = [
     'Hola como estas',
-    'Platzi'
+    'Platzi',
     'Oscar',
 ]
 
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    emordnilap =  palindrome.replace(" ","").lower()
+           
+    return emordnilap == emordnilap[::-1]
+
 
 def validate():
     for palindrome in PALINDROMES:
