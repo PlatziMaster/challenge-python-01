@@ -14,8 +14,20 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    # Comencemos convirtiendo a lower case el palindrome
+    palindrome = palindrome.lower()
+    # se parte el palindromo en tokens
+    palindrome = palindrome.split(' ')
+    #se usen los tokens
+    palindrome=''.join(palindrome)
+    # construyamos un reverse del palindrome
+    palindrome_reverse = palindrome[::-1]
+    # finalmente comparemos si palindrome_lower y reverse son iguales
+    if palindrome==palindrome_reverse:
+        return True
+    else:
+        return False
+    
 
 def validate():
     for palindrome in PALINDROMES:
