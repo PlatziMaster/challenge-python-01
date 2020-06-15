@@ -15,7 +15,16 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    backwards_letters = []
+
+    for letter in palindrome:
+        backwards_letters.insert(0, letter)
+
+    backwards_word = ''.join(backwards_letters)
+
+    if backwards_word == palindrome:
+        return True
+    return False
 
 def validate():
     for palindrome in PALINDROMES:
