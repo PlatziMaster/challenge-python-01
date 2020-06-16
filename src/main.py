@@ -13,9 +13,14 @@ NOT_PALINDROMES = [
 ]
 
 
-def is_palindrome(palindrome):
-    # Start coding here
-    pass
+def is_palindrome(palindrome):    
+    # Remove spaces
+    palindrome = palindrome.replace(" ", "")
+    # To lowerCases
+    palindrome = palindrome.lower()
+    # Compare with the inverse word 
+    return palindrome == palindrome[::-1]
+    
 
 def validate():
     for palindrome in PALINDROMES:
