@@ -5,17 +5,23 @@ PALINDROMES = [
     'A la catalana banal atacala',
     'Amar da drama',
 ]
-
+# Here I found a miss " , " between the word "Platzi" and "Oscar"
 NOT_PALINDROMES = [
     'Hola como estas',
-    'Platzi'
-    'Oscar',
+    'Platzi',
+    'Oscar'
 ]
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    palindrome = palindrome.replace(' ','').lower()
+    new_word = str(palindrome[::-1])
+    if new_word == palindrome:
+        print('the sentence or word *{}* is a palindrome'.format(new_word))
+        return True
+    else:
+        print('the sentence or word *{}* not is a palindrome'.format(new_word))
+        return False
 
 def validate():
     for palindrome in PALINDROMES:
