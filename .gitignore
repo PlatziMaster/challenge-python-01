@@ -138,4 +138,4 @@ dmypy.json
 .pytype/
 
 # VSCODE stuff:
-.vscode
+.vscode/
