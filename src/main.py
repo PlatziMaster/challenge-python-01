@@ -15,6 +15,14 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
+    palindromeMinusculas = (palindrome.lower())
+    palindromeSinEspacios = palindromeMinusculas.replace(" ","")
+    palindromeVolteado = palindromeSinEspacios[::-1]
+
+    if palindromeSinEspacios == palindromeVolteado:
+        return True
+    else :
+        return False
     pass
 
 def validate():
