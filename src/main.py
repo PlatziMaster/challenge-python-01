@@ -14,8 +14,34 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    myList = []
+    counter = -1
+    letra = ""
+    newList = []
+    for len in palindrome:
+        if len == "A":
+            myList.append("a")
+            counter += 1
+        elif len == "H":
+            myList.append("h")
+            counter += 1
+        elif len == "P":
+            myList.append("p")
+            counter += 1
+        elif len == "O":
+            myList.append("o")
+            counter += 1
+        elif len != " ":
+            myList.append(len)
+            counter += 1
+    while counter >= 0:
+        newList.append(myList[counter])
+        counter -= 1
+    if myList == newList:
+        return True
+    else:
+        return False
+
 
 def validate():
     for palindrome in PALINDROMES:
