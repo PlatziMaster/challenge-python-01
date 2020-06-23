@@ -16,7 +16,6 @@ NOT_PALINDROMES = [
 def is_palindrome(palindrome):
     myList = []
     counter = -1
-    letra = ""
     newList = []
     for len in palindrome:
         if len == "A":
