@@ -1,0 +1,24 @@
+#Challenge 1 python DAVID STEVEN BOCAREJO IBAÑEZ
+
+PalabraIn =input('Ingrese una Palabra: ')
+
+def palindromo (Palabra):
+    my_array= ''
+    yarra_ym= ''
+    for i in Palabra.lower():
+        if i.isdigit() == True:
+            my_array = 10
+            break
+        if i != " ":
+            my_array = my_array + i
+            yarra_ym= i + yarra_ym
+        i += i
+
+    if my_array == 10:
+        print(f'La palabra es invalida por que tiene el numeros')
+    elif my_array != yarra_ym:
+        print(f'La palabra {Palabra} NO es un Palindromo')
+    else:
+        print(f'La palabra {Palabra} SI es un Palindromo')
+
+palindromo (PalabraIn)
