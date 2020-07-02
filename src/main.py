@@ -13,8 +13,21 @@ NOT_PALINDROMES = [
 ]
 
 
-def is_palindrome(palindrome):
-    # Start coding here
+def is_palindrome(palindrome):   
+    simpleword= []
+    reverseword= []
+    for char in palindrome:
+        if char != ' ':
+            simpleword.append(char.lower())
+    print(simpleword)
+    for char in reversed(simpleword):
+        reverseword.append(char)
+    print(reverseword)
+
+    if simpleword == reverseword:
+        return True
+    else:
+        return False
     pass
 
 def validate():
