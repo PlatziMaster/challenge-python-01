@@ -13,8 +13,7 @@ NOT_PALINDROMES = [
 ]
 
 
-def is_palindrome(palindrome):
-    # Start coding here 
+def is_palindrome(palindrome):   
     simpleword= []
     reverseword= []
     for char in palindrome:
