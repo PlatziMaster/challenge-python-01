@@ -15,7 +15,9 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    palindrome_without_space = palindrome.lower().replace(' ', '')
+    return palindrome_without_space == palindrome_without_space[::-1]
+
 
 def validate():
     for palindrome in PALINDROMES:
