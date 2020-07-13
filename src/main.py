@@ -8,21 +8,24 @@ PALINDROMES = [
 
 NOT_PALINDROMES = [
     'Hola como estas',
-    'Platzi'
+    'Platzi',
     'Oscar',
 ]
 
-
 def is_palindrome(palindrome):
     # Start coding here
-    backwards_letters = []
+    backwards_letters= []
+    palindrome_no_spaces = ''
+    
+    palindrome_no_spaces = ''.join(palindrome.lower().split())
 
     for letter in palindrome:
-        backwards_letters.insert(0, letter)
+        backwards_letters.insert(0, letter.lower())
 
-    backwards_word = ''.join(backwards_letters)
+    backwards_word= ''.join(backwards_letters)
+    backwards_word_no_spaces= ''.join(backwards_word.lower().split())
 
-    if backwards_word == palindrome:
+    if backwards_word_no_spaces == palindrome_no_spaces:
         return True
     return False
 
