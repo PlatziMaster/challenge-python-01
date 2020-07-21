@@ -14,6 +14,12 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
+    # Primero necesito quitar los espacios
+    # Despues necesito convertir el texto en minusculas
+    # ¿Como podria hacer la comparacion de manera eficiente?
+    # Algunas ideas
+    # - Partir el string en dos y voltear la segunda mitad y comparar con la primera
+    # - Algun loop que compare el primer indice con el ultimo y vayan recorriendose
     # Start coding here
     pass
 
