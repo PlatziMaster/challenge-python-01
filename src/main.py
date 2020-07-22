@@ -14,14 +14,20 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
+    # Si no es un string, tratamos de convertirlo
+    type(palindrome) != 'string':
+        palindrome = str(palindrome)
     # Primero necesito quitar los espacios
-    # Despues necesito convertir el texto en minusculas
+    palindrome = palindrome.replace(' ', '')
+    # Despues necesito convertir el texto en minúsculas
+    palindrome = palindrome.lower()
     # ¿Como podria hacer la comparacion de manera eficiente?
     # Algunas ideas
     # - Partir el string en dos y voltear la segunda mitad y comparar con la primera
     # - Algun loop que compare el primer indice con el ultimo y vayan recorriendose
     # Start coding here
     pass
+
 
 def validate():
     for palindrome in PALINDROMES:
