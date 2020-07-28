@@ -15,7 +15,22 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+
+    #First remove the Mayus and Minus
+    palindrome = palindrome.casefold()
+
+    #Then i need to remove the spaces in the string
+    palindrome = palindrome.replace(" ","")
+
+    #And the string is ready to be reversed
+    reverse = palindrome[::-1]
+
+    if reverse == palindrome:
+        #print(palindrome, reverse)
+        return True
+    else:
+        return False
+
 
 def validate():
     for palindrome in PALINDROMES:
