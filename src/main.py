@@ -15,6 +15,13 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
+    palindrome = palindrome.replace(' ','') #Esto reemplaza cualquier espacio por un string vacío
+    palindrome = palindrome.lower() #Pasa palindrome a minúsculas
+    palabra_invertida = palindrome[::-1]
+    if palindrome == palabra_invertida:
+        return True
+    else:
+        return False
     pass
 
 def validate():
