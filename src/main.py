@@ -15,7 +15,22 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    palindrome = palindrome.lower()
+    palindrome = palindrome.strip()
+    palindrome = palindrome.replace(' ', '')
+    palindrome = palindrome.replace('á', 'a')
+    palindrome = palindrome.replace('é', 'e')
+    palindrome = palindrome.replace('í', 'ó')
+    palindrome = palindrome.replace('ó', 'o')
+    palindrome = palindrome.replace('ú', 'u')
+    palindrome = palindrome.replace('ü', 'u')
+    palindrome = palindrome.replace(',', '')
+
+    if palindrome == palindrome[::-1]:
+        return True
+    else:
+        return False
+        
 
 def validate():
     for palindrome in PALINDROMES:
