@@ -14,8 +14,17 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    letter = ''.join(palindrome).replace(' ','').lower() #
+    reverse_letter = ''.join(palindrome[::-1]).replace(' ', '').lower()
+    if letter == reverse_letter:
+        # print('ifpalabra: ', letter)
+        # print('ifReversa: ', reverse_letter)
+        return True
+    else:
+        # print('elsepalabra: ', letter)
+        # print('elseReversa: ', reverse_letter)
+        return False
+
 
 def validate():
     for palindrome in PALINDROMES:
