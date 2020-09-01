@@ -15,7 +15,13 @@ NOT_PALINDROMES = [
 
 def is_palindrome(palindrome):
     # Start coding here
-    pass
+    word_without_spaces = palindrome.replace(' ', '')
+    lowercase_word_without_spaces = word_without_spaces.lower()
+    lowercase_word_without_spaces = list(lowercase_word_without_spaces)
+    reverse_word = lowercase_word_without_spaces.copy()
+    reverse_word.reverse()
+
+    return lowercase_word_without_spaces == reverse_word
 
 def validate():
     for palindrome in PALINDROMES:
