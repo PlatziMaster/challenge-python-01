@@ -14,8 +14,10 @@ NOT_PALINDROMES = [
 
 
 def is_palindrome(palindrome):
-    # Start coding here
-    pass
+    st=palindrome.replace(" ","")
+    if st[::-1]==st:
+        return True
+    return False
 
 def validate():
     for palindrome in PALINDROMES:
