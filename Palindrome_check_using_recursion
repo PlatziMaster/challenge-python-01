@@ -1,0 +1,16 @@
+word = input("ENTER WORD: ")
+word = list(word)
+print(word)
+
+
+
+def is_palindrome(word):
+    if len(word) == 0 or len(word) == 1:
+        return True
+    elif word.pop(0) != word.pop():
+        return False
+    else:
+        return is_palindrome(word)
+    
+
+print("Is Palindrome: ", is_palindrome(word))
